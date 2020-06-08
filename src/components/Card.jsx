@@ -9,8 +9,10 @@ function Card({ pokemon }) {
       <div>
         <img src={pokemon.sprites.front_default} alt="" />
       </div>
-      <div>{pokemon.name}</div>
-      <div>#{pokemon.id}</div>
+      <div>
+        <p>{pokemon.name}</p>
+        <p class="id">#{pokemon.id}</p>
+      </div>
     </div>
   );
 }

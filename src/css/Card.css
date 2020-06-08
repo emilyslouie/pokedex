@@ -16,3 +16,11 @@
     -webkit-transform: scale(1.005) translateY(-10px);
     transform: scale(1.005) translateY(-10px);
 }
+
+p {
+    line-height: 0.3;
+}
+
+.id {
+    font-size: 0.8em;
+}

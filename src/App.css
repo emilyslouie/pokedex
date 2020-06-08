@@ -9,21 +9,43 @@ body {
 }
 
 .grid {
-  padding: 40px;
+  /* padding: 40px; */
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
   grid-gap: 20px;
   text-align: center;
   text-transform: capitalize;
+  margin-right: 50px;
+  padding-bottom: 50px;
 }
 
-.section {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
-  font-size: calc(10px + 2vmin);
-  color: rgb(5, 0, 0);
+.tabs {
+  padding-top: 10px;
 }
+
+.tabs ul li {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.tabs ul li A {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  padding: 10px;
+  border: .5px solid #d6d6d6;
+  border-radius: 15px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.tabs ul li A:hover {
+background-color: #d6d6d6;
+-webkit-transition: all .2s;
+transition: all .2s;
+}
+
 

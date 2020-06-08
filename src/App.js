@@ -1,49 +1,30 @@
 import React, { useState, useEffect } from 'react';
+import { useRoutes, A } from "hookrouter";
+import routes from "./router";
+import NoPageFound from "./components/NoPageFound";
 import './App.css';
 import Header from './components/Header.jsx';
 import Card from './components/Card';
 
 function App() {
-  const [pokemon, setPokemon] = useState([]);
-  const apiURL = "https://pokeapi.co/api/v2/pokemon?limit=151";
 
-  useEffect(() => {
-    async function fetchData() {
-      let response = await pokeAPICall(apiURL);
-      loading(response.results);
-    }
-    fetchData();
-  });
+  function refreshPage() {
+    window.location.reload(false);
+  }
 
-function pokeAPICall(url) {
-  return new Promise((resolve) => {
-    fetch(url)
-      .then(results => results.json())
-      .then(data => {
-        resolve(data);
-      })
-  });
-}
-
-const loading = async allData => {
-  let pokemonData = await Promise.all(
-    allData.map(async pokemon => {
-      pokemon = await pokeAPICall(pokemon.url);
-      return pokemon;
-    })
-  );
-  setPokemon(pokemonData);
-};
+  const routeResult = useRoutes(routes);
 
   return (
     <div>
       <Header />
-      <div className="section">
-      </div>
-      <div className="grid">
-        {pokemon.map((pokemon, i) => {
-          return <Card key={i} pokemon={pokemon} />;
-        })}
+      <div className="tabs">
+        <ul>
+          <li> <A href="/gen1" onClick={refreshPage}>Generation 1</A> <br /></li>
+          <li> <A href="/gen2" onClick={refreshPage}>Generation 2</A> <br /></li>
+          <li> <A href="/gen3" onClick={refreshPage}>Generation 3</A> <br /></li>
+          <li> <A href="/gen4" onClick={refreshPage}>Generation 4</A> <br /></li>
+          {routeResult || <NoPageFound />}
+        </ul>
       </div>
     </div>
   );
