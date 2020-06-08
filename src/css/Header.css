@@ -1,0 +1,9 @@
+.Header {
+    min-height: 45px;
+    box-shadow: 0px 5px 4px 0px #c7c7c7;
+  }
+  
+  .Header h1 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
