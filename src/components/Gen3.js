@@ -12,7 +12,7 @@ function Gen1() {
         loading(response.results);
       }
       fetchData();
-    });
+    }, []);
 
   function pokeAPICall(url) {
     return new Promise((resolve) => {
