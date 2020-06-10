@@ -6,7 +6,7 @@ You can see the live project [here](https://pokedexexplorer.netlify.app).
 
 ## Stack
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
-- Utilized the [Pokeapi](https://pokeapi.co)
+- Utilized the [Pokeapi](https://pokeapi.co) for the Pokémon and their details
 
 
 ## How to run the project
