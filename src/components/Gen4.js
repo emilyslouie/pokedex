@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
-import Card from './Card';
+import PokeCard from './Card';
 
-function Gen1() {
+function Gen4() {
     const [pokemon, setPokemon] = useState([]);
-    const apiURL = "https://pokeapi.co/api/v2/pokemon?limit=108&offset=386";
+    const apiURL = "https://pokeapi.co/api/v2/pokemon?limit=107&offset=386";
   
     useEffect(() => {
       async function fetchData() {
@@ -41,11 +41,11 @@ function Gen1() {
         </div>
         <div className="grid">
           {pokemon.map((pokemon, i) => {
-            return <Card key={i} pokemon={pokemon} />;
+            return <PokeCard key={i} pokemon={pokemon} />;
           })}
         </div>
       </div>
     );
   }
   
-  export default Gen1;
+  export default Gen4;

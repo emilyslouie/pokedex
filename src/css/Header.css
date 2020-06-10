@@ -4,8 +4,10 @@
 }
 
 .Header h1 {
-  margin-left: 50px;
+  display: block;
+  margin-left: 15px;
   margin-right: 50px;
+  font-family: "Roboto", sans-serif !important;
 }
 
 .nav {
@@ -13,8 +15,24 @@
   color: black;
 }
 
-.nav:hover {
+.logo {
+  display: block;
+  max-width: 45px;
+  max-height: 45px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  margin-left: 45px;
+}
+
+.footer {
+  padding-top: 20px;
+  font-size: 1.2em;
+  color: #a5a5a5;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.footer span:hover {
   text-decoration: underline;
-  color: black;
   cursor: pointer;
 }

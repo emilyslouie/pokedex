@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
-import Card from './Card';
+import PokeCard from './Card';
 
 function Gen1() {
     const [pokemon, setPokemon] = useState([]);
@@ -41,7 +41,7 @@ function Gen1() {
         </div>
         <div className="grid">
           {pokemon.map((pokemon, i) => {
-            return <Card key={i} pokemon={pokemon} />;
+            return <PokeCard key={i} pokemon={pokemon} />;
           })}
         </div>
       </div>

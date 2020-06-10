@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import '../App.css';
 import PokeCard from './Card';
 
-function Gen2() {
+function Gen5() {
     const [pokemon, setPokemon] = useState([]);
-    const apiURL = "https://pokeapi.co/api/v2/pokemon?limit=99&offset=151";
+    const apiURL = "https://pokeapi.co/api/v2/pokemon?limit=156&offset=494";
   
     useEffect(() => {
       async function fetchData() {
@@ -13,7 +13,7 @@ function Gen2() {
       }
       fetchData();
     }, []);
-  
+
   function pokeAPICall(url) {
     return new Promise((resolve) => {
       fetch(url)
@@ -36,8 +36,8 @@ function Gen2() {
   
     return (
       <div>
-        <div className="section">
-        <h1>Generation 2 - Johto</h1>
+      <div className="section">
+        <h1>Generation 5 - Unova</h1>
         </div>
         <div className="grid">
           {pokemon.map((pokemon, i) => {
@@ -48,4 +48,4 @@ function Gen2() {
     );
   }
   
-  export default Gen2;
+  export default Gen5;

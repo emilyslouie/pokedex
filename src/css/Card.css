@@ -1,8 +1,7 @@
 .card {
     background-color: white;
-    padding: 5px;
+    padding: 10px;
     border: .5px solid #efefef;
-    border-radius: 15px;
     -webkit-transition: all .4s;
     transition: all .4s;
 
@@ -17,10 +16,39 @@
     transform: scale(1.005) translateY(-10px);
 }
 
+.modal {
+    display: flex !important;
+    align-items: center;
+}
+
+
 p {
     line-height: 0.3;
 }
 
+.dex p {
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
+.modal-90w {
+    min-width: 30vw;
+}
+
+.name {
+    text-transform: capitalize;
+}
+
+.modal-title {
+    text-transform: capitalize;
+}
+
 .id {
     font-size: 0.8em;
+}
+
+.image {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 50px;;
 }
