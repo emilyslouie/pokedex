@@ -1,4 +1,4 @@
-## Pokedex Explorer
+## Pokédex Explorer
 
 Ever since I was young, I have always loved Pokémon, hence the Piplup profile picture. To practice my React skills, I developed a Pokédex application that displays Pokémon from the first generation to the fifth generation.
 
