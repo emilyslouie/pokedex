@@ -32,7 +32,7 @@
   padding-bottom: 40px;
 }
 
-.footer span:hover {
+.footer a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
