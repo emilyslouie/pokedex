@@ -30,6 +30,12 @@
   color: #a5a5a5;
   text-align: center;
   padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.footer p {
+  line-height: 1.5;
 }
 
 .footer a:hover {

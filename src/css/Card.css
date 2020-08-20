@@ -4,7 +4,6 @@
     border: .5px solid #efefef;
     -webkit-transition: all .4s;
     transition: all .4s;
-
 }
 
 .card:hover {
@@ -23,7 +22,7 @@
 
 
 p {
-    line-height: 0.3;
+    line-height: 0.9;
 }
 
 .dex p {
@@ -45,6 +44,10 @@ p {
 
 .id {
     font-size: 0.8em;
+}
+
+.name {
+    padding-top: 5px;
 }
 
 .image {

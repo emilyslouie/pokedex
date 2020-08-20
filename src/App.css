@@ -9,7 +9,6 @@ body {
 }
 
 .grid {
-  /* padding: 40px; */
   display: grid; 
   margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
@@ -18,6 +17,7 @@ body {
   text-transform: capitalize;
   margin-right: 50px;
   padding-bottom: 50px;
+  padding-left: 40px;
 }
 
 .tabs {
@@ -54,5 +54,40 @@ h1 {
   padding-top: 15px;
   font-size: 2em !important;
   padding-bottom: 10px;;
+}
+
+.section {
+  padding-left: 40px;
+}
+
+.notFound h1 {
+    text-align: center;
+}
+.notFound p {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+
+.notFound img {
+  max-width: 250px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.search {
+padding-top: 10px;
+padding-left: 40px;
+display: flex;
+}
+
+.search h2 {
+  font-size: 20px;
+  margin-top: auto;
+  margin-right: 10px;
 }
 
