@@ -1,0 +1,166 @@
+.home {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    padding: 75px;
+}
+
+.hello {
+    font-weight: 600;
+    margin-bottom: -5px;
+}
+
+h1 {
+    font-weight: 700;
+    padding-bottom: 35px;
+}
+
+.underline {
+    border-bottom: 3px solid #FABC3D;
+    display: inline-block;
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h2 {
+    padding-left: 40px;
+    padding-top: 25px;
+    font-size: 18px !important;
+}
+
+p {
+    line-height: 1.5 !important;
+    font-size: 18px;
+}
+
+.trainer {
+    max-width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 10px;
+}
+
+.tabz {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.tabz ul {
+    padding-inline-start: 0px;
+}
+
+.tabz ul li {
+    display: inline-block;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+
+.tabz ul li A {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 500;
+    padding: 10px;
+    border: .5px solid #d6d6d6;
+    border-radius: 15px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.tabz ul li A:hover {
+    background-color: #fdcb5f;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.centre {
+    text-align: center;
+}
+
+.piplup img{
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.default {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 15px;
+    text-transform: none;
+}
+
+.text {
+    padding: 15px;
+    padding-top: 25px;
+    padding-left: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .home {
+        padding: 15px;
+        padding-top: 25px;
+    }
+
+    .underline {
+        border-bottom: none;
+        font-size: 32px;
+        border-left: 3px solid #FABC3D;
+        padding-left: 10px;
+    }
+
+    h1 {
+        padding-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 18px !important;
+        line-height: 1.4;
+    }
+
+    h2 {
+        padding-left: 15px;
+        padding-top: 15px;
+        font-size: 16px !important;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .tabz {
+        padding-top: 15px;
+        margin-bottom: -15px;
+    }
+
+    .tabz ul {
+        font-size: 14px;
+    }
+
+    .tabz ul li {
+        display: inline-block;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    .tabz ul li A {
+        padding: 7px;
+    }
+
+    .text {
+        padding: 15px;
+        padding-top: 20px;
+    }
+
+}

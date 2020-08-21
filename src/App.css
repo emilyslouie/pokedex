@@ -9,7 +9,7 @@ body {
 }
 
 .grid {
-  display: grid; 
+  display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
   grid-gap: 20px;
@@ -21,8 +21,8 @@ body {
 }
 
 .tabs {
-  padding-top: 30px;
-  
+  padding-top: 15px;
+
 }
 
 .tabs ul li {
@@ -45,30 +45,35 @@ body {
 }
 
 .tabs ul li A:hover {
-background-color: #d6d6d6;
--webkit-transition: all .2s;
-transition: all .2s;
+  background-color: #fdcb5f;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 h1 {
   padding-top: 15px;
   font-size: 2em !important;
-  padding-bottom: 10px;;
+  padding-bottom: 10px;
+  ;
 }
 
 .section {
   padding-left: 40px;
 }
 
-.notFound h1 {
-    text-align: center;
+.notFound {
+  padding-top: 40px;
 }
+
+.notFound h1 {
+  text-align: center;
+}
+
 .notFound p {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 50px;
 }
-
 
 .notFound img {
   max-width: 250px;
@@ -79,15 +84,35 @@ h1 {
   width: 50%;
 }
 
-.search {
-padding-top: 10px;
-padding-left: 40px;
-display: flex;
-}
 
-.search h2 {
-  font-size: 20px;
-  margin-top: auto;
-  margin-right: 10px;
-}
+@media only screen and (max-width: 600px) {
+  .grid {
+    margin-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+  }
 
+  .tabs {
+    padding-top: 15px;
+    margin-left: -25px;
+    margin-bottom: -15px;
+  }
+  .tabs ul {
+    font-size: 14px;
+  }
+
+  .tabs ul li {
+    display: inline-block;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  .tabs ul li A {
+    padding: 7px;
+  }
+
+  .section {
+    padding-left: 15px;
+    font-size: 80%;
+  }
+
+}

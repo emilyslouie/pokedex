@@ -79,6 +79,9 @@ function PokeCard({ pokemon }) {
     case "tapu-fini":
       pokeName = "tapu fini";
       break;
+      case "oricorio-baile":
+        pokeName = "oricorio baile";
+        break;
     default:
   }
   var typeName = pokemon.types[0].type.name;
@@ -96,25 +99,25 @@ function PokeCard({ pokemon }) {
           <img src={pic} alt="" loading="lazy" width="100" height="100" />
         </div>
         <div>
-          <p class="name">{pokeName}</p>
-          <p class="id">#{idNum}</p>
+          <p className="name">{pokeName}</p>
+          <p className="id">#{idNum}</p>
         </div>
       </div>
 
       <Modal show={showModal} onHide={handleClose} dialogClassName="modal-90w">
         <Modal.Header closeButton>
-          <Modal.Title className="modal-title">#{idNum} - {pokeName}</Modal.Title>
+          <Modal.Title className="modal-title">{idNum} - {pokeName}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="image">
             <img src={pic} alt="" width="200" height="200" />
           </div>
           <div className="dex">
-            <p>Pokédex ID: #{idNum}</p>
-            <p className="name">Name: {pokemon.name}</p>
-            <p className="name">Type: {typeName}</p>
-            <p>Height: {pokeHeight} metres</p>
-            <p>Weight: {pokeWeight} kilograms</p>
+            <h3 className="name">{pokeName}</h3>
+            <p className="num">National №: {idNum}</p>
+            <p className="type">Type: {typeName}</p>
+            <p>Height: {pokeHeight} m</p>
+            <p>Weight: {pokeWeight} kg</p>
           </div>
         </Modal.Body>
       </Modal>

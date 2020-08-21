@@ -7,7 +7,12 @@ function Gen({ generation }) {
     const [pokemon, setPokemon] = useState([]);
     var limit = 0, offset = 0;
     var location = "";
-    if (generation === 1) {
+    var title ="";
+    if (generation === 0) {
+        limit = 807;
+        offset = 0;
+        title = "All Pokémon"
+    } else if (generation === 1) {
         limit = 151;
         offset = 0;
         location = "Kanto";
@@ -37,6 +42,11 @@ function Gen({ generation }) {
         location = "Alola";
     }
     const apiURL = `https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`;
+
+    if (generation !== 0)
+    {
+        title = `Generation ${generation} – ${location}`;
+    }
 
     useEffect(() => {
         async function fetchData() {
@@ -69,7 +79,7 @@ function Gen({ generation }) {
     return (
         <div>
             <div className="section">
-                <h1>Generation {generation} – {location}</h1>
+                <h1><span className="region">{title}</span></h1>
             </div>
             <ScrollToTop smooth />
             <div className="grid">

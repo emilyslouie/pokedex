@@ -1,9 +1,15 @@
 .card {
     background-color: white;
-    padding: 10px;
+    padding: 5px;
+    padding-top: 8px;
     border: .5px solid #efefef;
     -webkit-transition: all .4s;
     transition: all .4s;
+    max-width: 150px;
+}
+
+.card p {
+    margin-bottom: 0.5em;
 }
 
 .card:hover {
@@ -20,7 +26,6 @@
     align-items: center;
 }
 
-
 p {
     line-height: 0.9;
 }
@@ -36,6 +41,7 @@ p {
 
 .name {
     text-transform: capitalize;
+    padding-top: 5px;
 }
 
 .modal-title {
@@ -46,8 +52,16 @@ p {
     font-size: 0.8em;
 }
 
-.name {
-    padding-top: 5px;
+.name h3 {
+    font-size: medium;
+}   
+
+.num {
+    padding-top: 15px;
+}
+
+.type {
+    text-transform: capitalize;
 }
 
 .image {

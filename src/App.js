@@ -1,59 +1,41 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import NoPageFound from "./components/NoPageFound";
 import './App.css';
-import Gen from "./components/Gen";
-import Header from './components/Header.jsx';
 import Footer from './components/Footer';
+import pokemon from "./pokemon.png";
+import "./css/Header.css"
+import Home from "./components/Home"
+import Search from "./components/Search"
+import NoPageFound from "./components/NoPageFound";
+import Explore from './components/Explore.js';
 
 function App() {
-
   return (
     <div>
-      <Header />
       <Router>
-        <div className="tabs">
-          <ul>
-            <li> <Link to="/gen1">Generation 1</Link></li>
-            <li> <Link to="/gen2">Generation 2</Link></li>
-            <li> <Link to="/gen3">Generation 3</Link></li>
-            <li> <Link to="/gen4">Generation 4</Link></li>
-            <li> <Link to="/gen5">Generation 5</Link></li>
-            <li> <Link to="/gen6">Generation 6</Link></li>
-            <li> <Link to="/gen7">Generation 7</Link></li>
-          </ul>
-        </div>
+        <nav className="Header">
+          <span className="nav">
+            <img className="logo" src={pokemon} alt="" />
+            <Link to="/"><h1><span className="smol">Pokédex</span></h1> </Link>
+            <Link to="/explore"><h3 className="navers">Explore</h3></Link>
+            <Link to="/search"><h3 className="navers">Search</h3> </Link>
+          </span>
+        </nav>
         <Switch>
           <Route exact path="/">
-            <Gen generation={1} />
+            <Home />
           </Route>
-          <Route path="/gen1">
-            <Gen generation={1} />
+          <Route path="/explore">
+            <Explore />
           </Route>
-          <Route path="/gen2">
-            <Gen generation={2} />
-          </Route>
-          <Route path="/gen3">
-            <Gen generation={3} />
-          </Route>
-          <Route path="/gen4">
-            <Gen generation={4} />
-          </Route>
-          <Route path="/gen5">
-            <Gen generation={5} />
-          </Route>
-          <Route path="/gen6">
-            <Gen generation={6} />
-          </Route>
-          <Route path="/gen7">
-            <Gen generation={7} />
+          <Route path="/search">
+            <Search />
           </Route>
           <Route path="*">
-            <NoPageFound />
-          </Route>
+              <NoPageFound />
+            </Route>
         </Switch>
       </Router>
-      
       <Footer />
     </div>
   );
